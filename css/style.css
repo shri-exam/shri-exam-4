@@ -1,0 +1,176 @@
+﻿/* --------------------------------- global reset --------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+input, textarea, select, button, a {
+	outline:none;
+}
+img {
+    vertical-align: middle;
+}
+
+
+/* --------------------------------- pages styling --------------------------------- */
+
+body, html {
+	background: #f4f7f9;
+	width: 100%;
+	height:100%;
+	overflow: hidden;
+}
+
+#navigation {
+	display: block;
+	height: 115px;
+	padding-top: 25px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	overflow: hidden;
+	z-index: 8;
+}
+
+#navigation .wrap {
+	display: block;
+	width: 100%;
+	height: 115px;
+	overflow: hidden;
+	position: relative;
+	bottom: -125px;
+	background:  rgba( 255, 255, 255, 0.8);
+	box-shadow: 0 0 10px 2px #ccc;
+}
+
+#navigation ul {
+	position: absolute;
+	display: block;
+	height: 100px;	
+	left: 0;
+}
+
+#navigation li, #navigation a{
+	display: block;
+	float: left;
+	height: 75px;
+	width: 75px;
+}
+
+#navigation li {
+	margin: 20px 10px;
+	background: url(../img/preloader_small.gif) center center no-repeat transparent;
+}
+
+#navigation img {
+	height: 75px;
+	width: 75px;
+	color: #000;	
+}
+
+#navigation .preloader {
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 50%;
+	margin-left: -15px;
+	top: 44px;
+	background: url(../img/preloader_small.gif) 0 0 no-repeat transparent;
+}
+
+#navigation .current a{
+	box-shadow: 0 0 10px 1px #39f;
+}
+
+
+#slides {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+#slides .preloader {
+	display: block;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -40px;
+	margin-top: -40px;
+	background: url(../img/preloader_big.gif) 0 0 no-repeat transparent;
+	z-index: 1;
+}
+
+#slides img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+	max-width: 95%;
+	max-height: 95%;
+	z-index: 5;
+}
+
+
+#arrows a{
+	display: block;
+	height: 60px;
+	width: 45px;
+	background: url(../img/arrows.png) 0 0 no-repeat transparent;
+	text-indent: -9999px;
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	z-index: 9;
+}
+
+#arrows a.prev{
+	background-position: 0 0;
+	left: -50px;
+}
+
+#arrows a.next{
+	background-position: -48px 0;
+	right: -50px;
+}
+
+#arrows a.prev:hover{
+	background-position: 0 -60px;
+}
+#arrows a.next:hover{
+	background-position: -48px -60px;
+}
+
+.error_msg {
+	color:#ccc;
+	font: 35px arial,sans-serif;
+	margin: 50px 0;
+	text-align: center;
+}
